@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="EN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="EN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; T-Watch Docs</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic" href="../basics/index.html" />
+    <link rel="prev" title="Introduction" href="../introduction/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> T-Watch K210
+          
+
+          
+            
+            <img src="../_static/logo2.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Get-started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#factory-reset">Factory reset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#steps">Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-setup">1. Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-cp2104-driver">1.1 Install CP2104 driver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-the-download-tool-ide">1.2 Install the download tool IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#parameter-introduction">2. Parameter introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-firmware">3. Upload firmware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download-factory-firmware">3.1 Download factory firmware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#burn-settings">3.2 Burn settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#start-burning">3.3 Start burning</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#normal-use">4. Normal use</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#normal-operation-mode">4.1 Normal operation mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test-mode">4.2 Test mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upload-mode">4.3 Upload mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/index.html">Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../related-links/index.html">Related-links</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">T-Watch K210</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/get-started/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="factory-reset">
+<h2>Factory reset<a class="headerlink" href="#factory-reset" title="Permalink to this headline">¶</a></h2>
+<p>This document guide guides users how to burn firmware and use the product</p>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="../_images/dou.gif"><img alt="../_images/dou.gif" src="../_images/dou.gif" style="width: 288.0px; height: 511.2px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/dou.gif"><img alt="../_images/dou.gif" src="../_images/dou.gif" style="width: 288.0px; height: 511.2px;" /></a>
+</div>
+<div class="section" id="steps">
+<h3>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="#get-stared-build"><span class="std std-ref">1. Environment Setup</span></a></p></li>
+<li><p><a class="reference internal" href="#get-stared-config"><span class="std std-ref">2. Parameter introduction</span></a></p></li>
+<li><p><a class="reference internal" href="#get-stared-download"><span class="std std-ref">3. Upload firmware</span></a></p></li>
+<li><p><a class="reference internal" href="#get-stared-use"><span class="std std-ref">4. Normal use</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="environment-setup">
+<span id="get-stared-build"></span><h2>1. Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install-cp2104-driver">
+<h3>1.1 Install CP2104 driver<a class="headerlink" href="#install-cp2104-driver" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip"><code class="xref download docutils literal notranslate"><span class="pre">CP2104-Win10</span></code></a></p></li>
+</ul>
+</div>
+<div class="section" id="install-the-download-tool-ide">
+<h3>1.2 Install the download tool IDE<a class="headerlink" href="#install-the-download-tool-ide" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/gui1.jpg"><img alt="../_images/gui1.jpg" src="../_images/gui1.jpg" style="width: 600.0px; height: 393.0px;" /></a>
+</div>
+<p>Download the installation package kflash_GUI: <a class="reference download internal" download="" href="../_downloads/f314761cfda0159edb18b89ab8646c85/kflash_gui_v1.5.5.zip"><code class="xref download docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">download</span></code></a></p>
+<p>Open the folder after unzipping</p>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="../_images/cx.gif"><img alt="../_images/cx.gif" src="../_images/cx.gif" style="width: 660.6px; height: 636.3000000000001px;" /></a>
+</div>
+<p>Find kflash_gui.exe, double-click to open it directly</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to facilitate the next use, it is recommended to save the exe file as a shortcut to the desktop</p>
+</div>
+</div>
+</div>
+<div class="section" id="parameter-introduction">
+<span id="get-stared-config"></span><h2>2. Parameter introduction<a class="headerlink" href="#parameter-introduction" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ggu.jpg"><img alt="../_images/ggu.jpg" src="../_images/ggu.jpg" style="width: 740.0px; height: 712.0px;" /></a>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">kflash_GUI</span></code> See below for setting operation：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">开发板(Board)</span></code>：Select Auto, automatic configuration</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">下载到(Download</span> <span class="pre">to)</span></code>：Select Flash and download to Flash</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">端口(Port)</span></code>：Select the automatically generated COM port</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">波特率(Baud)</span></code>：Choose 1500000</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">速度模式(Speed</span> <span class="pre">mode)</span></code>：Choose low speed</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If the COM port cannot be read, please check if the driver is installed</p>
+</div>
+</div>
+<div class="section" id="upload-firmware">
+<span id="get-stared-download"></span><h2>3. Upload firmware<a class="headerlink" href="#upload-firmware" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="download-factory-firmware">
+<h3>3.1 Download factory firmware<a class="headerlink" href="#download-factory-firmware" title="Permalink to this headline">¶</a></h3>
+<p>First download the K210 firmware: <a class="reference download internal" download="" href="../_downloads/e1d831e352b62dadcef33e085385cba0/maixpy_v0.5.0-42-g458ed4ela-twatch.bin"><code class="xref download docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">download</span></code></a></p>
+</div>
+<div class="section" id="burn-settings">
+<h3>3.2 Burn settings<a class="headerlink" href="#burn-settings" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ggu.jpg"><img alt="../_images/ggu.jpg" src="../_images/ggu.jpg" style="width: 740.0px; height: 712.0px;" /></a>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">开发板(Board)</span></code>：Select Auto, automatic configuration</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">下载到(Download</span> <span class="pre">to)</span></code>：Select Flash and download to Flash</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">端口(Port)</span></code>：Select the automatically generated COM port</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">波特率(Baud)</span></code>：Choose 1500000</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">速度模式(Speed</span> <span class="pre">mode)</span></code>：Choose low speed</p></li>
+</ul>
+</div>
+<div class="section" id="start-burning">
+<h3>3.3 Start burning<a class="headerlink" href="#start-burning" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/zz.gif"><img alt="../_images/zz.gif" src="../_images/zz.gif" style="width: 697.0px; height: 829.0px;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="normal-use">
+<span id="get-stared-use"></span><h2>4. Normal use<a class="headerlink" href="#normal-use" title="Permalink to this headline">¶</a></h2>
+<p>After burning successfully, there will be three modes</p>
+<div class="section" id="normal-operation-mode">
+<h3>4.1 Normal operation mode<a class="headerlink" href="#normal-operation-mode" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/aa.gif"><img alt="../_images/aa.gif" src="../_images/aa.gif" style="width: 688.0px; height: 518.0px;" /></a>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Just power on, the screen interface remains unchanged</p>
+</div>
+</div>
+<div class="section" id="test-mode">
+<h3>4.2 Test mode<a class="headerlink" href="#test-mode" title="Permalink to this headline">¶</a></h3>
+<p>The following operations are required to turn on the camera display</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1.Power</span> <span class="pre">supply</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2.Press</span> <span class="pre">and</span> <span class="pre">hold</span> <span class="pre">the</span> <span class="pre">button</span> <span class="pre">next</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">USB</span> <span class="pre">port</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">3.Let</span> <span class="pre">go</span> <span class="pre">when</span> <span class="pre">you</span> <span class="pre">see</span> <span class="pre">the</span> <span class="pre">screen</span> <span class="pre">light</span> <span class="pre">up</span></code></p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/asd.gif"><img alt="../_images/asd.gif" src="../_images/asd.gif" style="width: 688.0px; height: 518.0px;" /></a>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Remember to press the button after power on, otherwise it will enter upload mode</p>
+</div>
+</div>
+<div class="section" id="upload-mode">
+<h3>4.3 Upload mode<a class="headerlink" href="#upload-mode" title="Permalink to this headline">¶</a></h3>
+<p>Press and hold the button before power on to enter upload mode
+But to avoid this</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../basics/index.html" class="btn btn-neutral float-right" title="Basic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../introduction/index.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, LilyGo
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #252525;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #3f3f3f;
+    }
+  </style>
+
+
+</body>
+</html>

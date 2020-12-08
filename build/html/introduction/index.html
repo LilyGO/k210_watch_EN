@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="EN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="EN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; T-Watch Docs</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting started" href="../get-started/index.html" />
+    <link rel="prev" title="T-Watch K210 document" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> T-Watch K210
+          
+
+          
+            
+            <img src="../_static/logo2.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">1.Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-parameters">2.Hardware parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#k210">2.1 K210</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pin-definition">3.Pin definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#display">3.1 Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#touch">3.2 Touch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-card">3.3 TF Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-ov2640">3.4 Camera:OV2640</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#microphone-msm261s">3.5 Microphone:MSM261S</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interactive-chip-esp32">3.6 Interactive chip:ESP32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#speaker-max98357a">3.7 Speaker:Max98357A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pmu-axp202">3.8 PMU:AXP202</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#six-axis-accelerometer-mpu6050">3.9 Six-axis accelerometer:MPU6050</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../get-started/index.html">Get-started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/index.html">Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../related-links/index.html">Related-links</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">T-Watch K210</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/k1.jpg" src="../_images/k1.jpg" />
+<div class="section" id="description">
+<h2>1.Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>T-Watch K210 is a programmable watch kit based on K210, consisting of three base plates and screens.You can program T-Watch K210 via Arduino or MicroPython.</p>
+</div>
+<div class="section" id="hardware-parameters">
+<h2>2.Hardware parameters<a class="headerlink" href="#hardware-parameters" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/cat.jpg" src="../_images/cat.jpg" />
+<ul class="simple">
+<li><p>Main chip: <strong>K210</strong></p></li>
+<li><p>1.54-inch capacitive HD display: <strong>ST7789V</strong></p></li>
+<li><p>Touchpad chip: <strong>FT6236U</strong></p></li>
+<li><p>2 million pixel HD camera: <strong>OV2640</strong></p></li>
+<li><p>Three-axis accelerometer: <strong>BMA423</strong></p></li>
+<li><p>Microphone: <strong>MSM261S</strong></p></li>
+<li><p>Speaker: <strong>Max98357A</strong></p></li>
+<li><p>PMU power management: <strong>AXP202</strong></p></li>
+<li><p>RTC clock module: <strong>PCF8563</strong></p></li>
+<li><p>6-axis accelerometer: <strong>MPU6050</strong></p></li>
+<li><p>Support TF card reading and writing</p></li>
+<li><p>Support the use of expandable modules</p></li>
+<li><p>Power supply: Type-C USB/lithium battery</p></li>
+</ul>
+<div class="section" id="k210">
+<h3>2.1 K210<a class="headerlink" href="#k210" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/i.png"><img alt="../_images/i.png" src="../_images/i.png" style="width: 240.0px; height: 240.0px;" /></a>
+</div>
+<ul class="simple">
+<li><p><strong>K210</strong> Master：</p>
+<ul>
+<li><p>With machine vision capabilities</p></li>
+<li><p>With machine hearing ability</p></li>
+<li><p>Better low-power vision processing speed and accuracy</p></li>
+<li><p>Unique programmable IO array, making product design more flexible</p></li>
+<li><p>3.3V/1.8V dual voltage support, no level conversion required, saving cost</p></li>
+<li><p>Support firmware encryption, which is difficult to crack using ordinary methods</p></li>
+<li><p>CPU: equipped with dual-core 64-bit high-performance low-power CPU based on RISC-V ISA</p></li>
+<li><p>Low voltage, lower power consumption compared with systems with the same processing capacity</p></li>
+<li><p>TSMC 28nm advanced manufacturing process, temperature range -40°C to 125°C, stable and reliable</p></li>
+<li><p>Equipped with a convolutional artificial neural network hardware accelerator KPU, which can perform convolutional artificial neural network operations with high performance</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Kendryte K210 is a system-on-chip (SoC) that integrates machine vision and machine hearing capabilities. Use TSMC (TSMC) ultra-low power
+The 28-nanometer advanced manufacturing process, with dual-core 64-bit processor, has better performance, stability and reliability. The program strives to
+The development of zero gate biology can be deployed in the user’s products in the shortest time and transform the product artificial intelligence.
+Kendryte K210 is positioned as an SoC in the AI and IoT market, and is a very convenient MCU.</p>
+</div>
+</div>
+</div>
+<div class="section" id="pin-definition">
+<h2>3.Pin definition<a class="headerlink" href="#pin-definition" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/pin.jpg" src="../_images/pin.jpg" />
+<div class="section" id="display">
+<h3>3.1 Display<a class="headerlink" href="#display" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO36</p></td>
+<td><p>SPI</p></td>
+<td><p>TFT_CS</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO38</p></td>
+<td><p>SPI</p></td>
+<td><p>TFT_DC</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO37</p></td>
+<td><p>SPI</p></td>
+<td><p>TFT_RST</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO39</p></td>
+<td><p>SPI</p></td>
+<td><p>TFT_WR</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO17</p></td>
+<td><p>BL</p></td>
+<td><p>TFT_BL</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="touch">
+<h3>3.2 Touch<a class="headerlink" href="#touch" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO31</p></td>
+<td><p>I2C</p></td>
+<td><p>Touch_SDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO30</p></td>
+<td><p>I2C</p></td>
+<td><p>Touch_SCL</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tf-card">
+<h3>3.3 TF Card<a class="headerlink" href="#tf-card" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO29</p></td>
+<td><p>SPI</p></td>
+<td><p>TF_CS</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO28</p></td>
+<td><p>SPI</p></td>
+<td><p>TF_MOSI</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO27</p></td>
+<td><p>SPI</p></td>
+<td><p>TF_MISO</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO26</p></td>
+<td><p>SPI</p></td>
+<td><p>TF_SCLK</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="camera-ov2640">
+<h3>3.4 Camera:OV2640<a class="headerlink" href="#camera-ov2640" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 25%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO42</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_RST</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO43</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_VYNC</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO44</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_PWDN</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO45</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_HYNC</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO46</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_XCLK</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO47</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_PCLK</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO40</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_SDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO41</p></td>
+<td><p>DVP</p></td>
+<td><p>DVP_SCL</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="microphone-msm261s">
+<h3>3.5 Microphone:MSM261S<a class="headerlink" href="#microphone-msm261s" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO18</p></td>
+<td><p>I2S</p></td>
+<td><p>MIC_BCK</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO19</p></td>
+<td><p>I2S</p></td>
+<td><p>MIC_WS</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO20</p></td>
+<td><p>I2S</p></td>
+<td><p>MIC_DAT</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="interactive-chip-esp32">
+<h3>3.6 Interactive chip:ESP32<a class="headerlink" href="#interactive-chip-esp32" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO25</p></td>
+<td><p>SPI-CS</p></td>
+<td><p>ESP32-IO05</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO28</p></td>
+<td><p>SPI-MOSI</p></td>
+<td><p>ESP32-IO14</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO26</p></td>
+<td><p>SPI-MISO</p></td>
+<td><p>ESP32-IO23</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO27</p></td>
+<td><p>SPI-SCLK</p></td>
+<td><p>ESP32-IO18</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="speaker-max98357a">
+<h3>3.7 Speaker:Max98357A<a class="headerlink" href="#speaker-max98357a" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO35</p></td>
+<td><p>I2S</p></td>
+<td><p>MAX_BCK</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO33</p></td>
+<td><p>I2S</p></td>
+<td><p>MAX_WS</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO34</p></td>
+<td><p>I2S</p></td>
+<td><p>MAX_DAT</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pmu-axp202">
+<h3>3.8 PMU:AXP202<a class="headerlink" href="#pmu-axp202" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO31</p></td>
+<td><p>I2C</p></td>
+<td><p>Touch_SDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO30</p></td>
+<td><p>I2C</p></td>
+<td><p>Touch_SCL</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO32</p></td>
+<td><p>INT</p></td>
+<td><p>AXP_IRQ</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="six-axis-accelerometer-mpu6050">
+<h3>3.9 Six-axis accelerometer:MPU6050<a class="headerlink" href="#six-axis-accelerometer-mpu6050" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>K210</p></th>
+<th class="head"><p>properties</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GPIO31</p></td>
+<td><p>I2C</p></td>
+<td><p>MPU_SDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO30</p></td>
+<td><p>I2C</p></td>
+<td><p>MPU_SCL</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../get-started/index.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="T-Watch K210 document" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, LilyGo
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #252525;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #3f3f3f;
+    }
+  </style>
+
+
+</body>
+</html>
